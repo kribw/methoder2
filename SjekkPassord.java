@@ -5,18 +5,10 @@ public class SjekkPassord {
         Scanner input = new Scanner(System.in);
         System.out.print("Skriv inn ditt hemmelige passord: ");
         String passord = input.next();
-        if (sjekkLengde(passord)) {
-            if (bokstavOgSiffer(passord)) {
-                if (minstToTall(passord)) {
+        if (sjekkLengde(passord) && bokstavOgSiffer(passord) && minstToTall(passord)) {
                     System.out.println("Passordet ditt er gyldig.");
-                } else {
-                    System.out.println("Passordet ditt er ikke gyldig. Det må inneholde minst to siffer.");
-                }
-            } else {
-                System.out.println("Passordet ditt er ikke gyldig. Det kan kun inneholde bokstaver og siffer.");
-            }
         } else {
-            System.out.println("Passordet ditt er ikke gyldig. Det må minst være 8 tegn.");
+            System.out.println("Passordet ditt er ikke gyldig.");
         }
     }
 
