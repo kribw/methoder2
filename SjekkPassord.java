@@ -21,11 +21,7 @@ public class SjekkPassord {
     }
 
     public static boolean sjekkLengde(String sjekk) {
-        if (sjekk.length() >= 8) {
-            return true;
-        } else {
-            return false;
-        }
+        return sjekk.length() >= 8;
     }
 
     public static boolean bokstavOgSiffer(String sjekk) {
@@ -35,11 +31,7 @@ public class SjekkPassord {
                 antall++;
             }
         }
-        if (antall == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return antall == 0;
     }
 
     public static boolean minstToTall(String passord) {
@@ -49,10 +41,6 @@ public class SjekkPassord {
                 antall++;
             }
         }
-        if (antall >= 2) {
-            return true;
-        } else {
-            return false;
-        }
+        return antall >= 2;
     }
 }
