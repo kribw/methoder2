@@ -21,8 +21,7 @@ public class SjekkPassord {
     }
 
     public static boolean sjekkLengde(String sjekk) {
-        int lengde = sjekk.length();
-        if (lengde >= 8) {
+        if (sjekk.length() >= 8) {
             return true;
         } else {
             return false;
