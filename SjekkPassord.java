@@ -10,13 +10,13 @@ public class SjekkPassord {
                 if (minstToTall(passord)) {
                     System.out.println("Passordet ditt er gyldig.");
                 } else {
-                    System.out.println("Passordet ditt er ugyldig.");
+                    System.out.println("Passordet ditt er ikke gyldig. Det må inneholde minst to siffer.");
                 }
             } else {
-                System.out.println("Passordet ditt er ugyldig.");
+                System.out.println("Passordet ditt er ikke gyldig. Det kan kun inneholde bokstaver og siffer.");
             }
         } else {
-            System.out.println("Passordet ditt er ugyldig.");
+            System.out.println("Passordet ditt er ikke gyldig. Det må minst være 8 tegn.");
         }
     }
 
