@@ -1,16 +1,13 @@
 public class AntallDager {
-    public static int year = 2000;
-
     public static void main(String[] args) {
-        for (int years = 2000; years < 2021; years++) {
-            System.out.println("År " + years + " har " + numberOfDaysInAYear(years) + " dager.");
-            year++;
+        for (int year = 2000; year <= 2020; year++) {
+            System.out.println("År " + year + " har " + numberOfDaysInAYear(year) + " dager.");
         }
     }
 
-    public static int numberOfDaysInAYear(int year) {
+    public static int numberOfDaysInAYear(int currentYear) {
         int dager;
-        if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+        if (currentYear % 400 == 0 || (currentYear % 4 == 0 && currentYear % 100 != 0)) {
             dager = 366;
             return dager;
         } else {
