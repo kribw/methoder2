@@ -4,7 +4,7 @@ public class Konvertering {
         System.out.println("Celsius\t\tFahrenheit\t|\tFahrenheit\tCelsius");
         System.out.println("--------------------------------------------------");
         for(double celsiusStart = 40; celsiusStart > 30; celsiusStart--) {
-            System.out.printf("%.2f\t\t%.2f\t\t|\t%.2f\t\t%.2f\n", celsiusStart, celsiusToFahrenheit(celsiusStart), fahrenheitStart, fahrenheitToCelsius(fahrenheitStart));
+            System.out.printf("%.1f\t\t%.2f\t\t|\t%.1f\t\t%.2f\n", celsiusStart, celsiusToFahrenheit(celsiusStart), fahrenheitStart, fahrenheitToCelsius(fahrenheitStart));
             fahrenheitStart -= 10;
         }
     }
